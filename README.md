@@ -1,6 +1,6 @@
-# [JBST Expo]
+# JBST Expo
 
-The Bootstrap Expo is a showcase of amazing and inspiring implementations of the [Jamedo's Bootstrap Start Theme (JBST)](https://github.com/bassjobsen/jamedo-bootstrap-start-theme) WordPress theme framework, curated by [@bassjobsen](https://github.com/bassjobsen).
+The JBST Expo is a showcase of amazing and inspiring implementations of the [Jamedo's Bootstrap Start Theme (JBST)](https://github.com/bassjobsen/jamedo-bootstrap-start-theme) WordPress theme framework, curated by [@bassjobsen](https://github.com/bassjobsen).
 
 Browse the entries at !
 
