@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include header.html %}
+  </head>
+  <body>
+
+    <div class="bsg-masthead">
+      <div class="bsg-container">
+        <h1><a href="{{ site.url }}">{{ site.name }}</a></h1>
+        <span class="tagline">Beautiful and inspiring uses of <a href="http://www.getbootstrap.com">Bootstrap</a></span>
+        <div class="tweet-btn">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://expo.getbootstrap.com/" data-size="large" data-count="none" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+          <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="bsg-content">
+      <div class="bsg-container">
+        {{ content }}
+      </div>
+    </div>
+
+    <div class="bsg-pagination">
+      <div class="bsg-container">
+
+        {% if paginator.next_page %}
+          <a href="/page{{paginator.next_page}}" class="paginate older">Older</a>
+        {% else %}
+          <span class="paginate next">Older</span>
+        {% endif %}
+
+        {% if paginator.previous_page %}
+          {% if paginator.page == 2 %}
+            <a href="/" class="paginate newer">Newer</a>
+          {% else %}
+            <a href="/page{{paginator.previous_page}}" class="paginate newer">Newer</a>
+          {% endif %}
+        {% else %}
+          <span class="paginate previous">Newer</span>
+        {% endif %}
+
+      </div>
+    </div>
+
+    <div class="bsg-contribute">
+      <div class="bsg-container">
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=watch&count=false&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
+        <p><a href="https://github.com/twbs/bootstrap-expo/issues/new" target="_blank">Suggest new sites</a> on GitHub. Subscribe to the <a href="/feed.xml" title="Bootstrap Expo RSS feed">RSS feed</a>.</p>
+      </div>
+    </div>
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '51341359613f5d301800006c');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+</html>

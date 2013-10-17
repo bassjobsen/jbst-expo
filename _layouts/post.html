@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="row bse-show">
+  <div class="col-span-4 col-push-8">
+    {% include carbonads.html %}
+  </div>
+  <div class="col-span-8 col-pull-4">
+    <h1 class="post-title">
+      {{ page.title }}
+    </h1>
+    <span class="post-date">{{ page.date | date_to_string }}</span>
+    {{ page.content }}
+  </div>
+</div>
+
+<div class="related">
+  <h3>More from the Expo</h3>
+  <div class="row bsg-listing">
+    {% for post in site.related_posts limit:3 %}
+      <div class="col-span-4">
+        {{ post.content }}
+        <h4 class="bse-thumb-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h4>
+        <span class="bse-thumb-date">{{ post.date | date_to_string }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</div>

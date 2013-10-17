@@ -1,0 +1,14 @@
+# Dependencies
+markdown:     rdiscount
+permalink:    pretty
+pygments:     true
+
+# Settings
+destination:  ./_gh_pages
+paginate:     8
+
+name:         JBST Expo
+description:  Beautiful and inspiring uses of JBST
+url:          http://
+
+future:       false
