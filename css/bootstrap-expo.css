@@ -192,7 +192,7 @@ body {
   .bsg-masthead .tweet-btn {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 100px;
     margin-top: 0;
   }
 
